@@ -1,6 +1,9 @@
 import React from "react";
 import PageHeader from "../../components/PageHeader";
+
 import "./styles.css";
+
+import whatsappIcon from "../../assets/images/icons/whatsapp.svg";
 
 function TeacherList() {
   return (
@@ -23,6 +26,37 @@ function TeacherList() {
           </div>
         </form>
       </PageHeader>
+
+      <main>
+        <article className="teacher-item">
+          <header>
+            <img
+              src="https://avatars1.githubusercontent.com/u/12374560?s=460&v=4"
+              alt="Luiz Carlos"
+            />
+            <div>
+              <strong>Luiz Carlos</strong>
+              <span>Química</span>
+            </div>
+          </header>
+
+          <p>
+            Lorem ipsum <br />
+            <br /> Lorem ipsum
+          </p>
+
+          <footer>
+            <p>
+              Preço/Hora
+              <strong>R$ 100,00</strong>
+            </p>
+            <button type="button">
+              <img src={whatsappIcon} alt="Whatsapp" />
+              Entrar em contato
+            </button>
+          </footer>
+        </article>
+      </main>
     </div>
   );
 }
