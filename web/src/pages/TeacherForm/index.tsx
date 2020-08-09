@@ -5,6 +5,7 @@ import warningIcon from "../../assets/images/icons/warning.svg";
 
 import "./styles.css";
 import Input from "../../components/Input";
+import Textarea from "../../components/Textarea";
 
 function TeacherForm() {
   return (
@@ -28,6 +29,7 @@ function TeacherForm() {
 
           <Input name="subject" label="Matéria" />
           <Input name="cost" label="Custo da sua aula por hora" />
+          <Textarea name="bio" label="Biografia" />
         </fieldset>
 
         <footer>
