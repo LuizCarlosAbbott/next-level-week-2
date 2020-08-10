@@ -33,7 +33,7 @@ function TeacherItem() {
       <View style={styles.footer}>
         <Text style={styles.price}>
           Preço/Hora {"   "}
-          <Text style={styles.priceValue}>R$ 20,00</Text>
+          <Text style={styles.priceValue}>R$ 100,00</Text>
         </Text>
 
         <View style={styles.buttonsContainer}>
