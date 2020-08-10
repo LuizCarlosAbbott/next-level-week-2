@@ -5,6 +5,7 @@ import { Feather } from "@expo/vector-icons";
 import PageHeader from "../components/PageHeader";
 import TeacherItem, { Teacher } from "../components/TeacherItem";
 import AsyncStorage from "@react-native-community/async-storage";
+import { useFocusEffect } from "@react-navigation/native";
 
 import api from "../../services/api";
 
@@ -31,6 +32,10 @@ function TeacherList() {
       }
     });
   }
+
+  useFocusEffect(() => {
+    loadFavorites();
+  });
 
   function handleToggleFIltersVisible() {
     setIsFiltersVisible(!isFiltersVisible);
